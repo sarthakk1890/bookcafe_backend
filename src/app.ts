@@ -5,9 +5,7 @@ import passport from 'passport';
 import cookieParser from 'cookie-parser'
 import cors from 'cors';
 
-dotenv.config({
-  path: './src/config/config.env',
-});
+dotenv.config(); //changed
 
 import { connectPassport } from './utils/Provider';
 import { errorMiddleware } from './middlewares/errorMiddleware';
